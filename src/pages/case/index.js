@@ -20,7 +20,7 @@ export default class index extends Component {
   render () {
     return (
       <View>
-        <View><Text> {'案例'} </Text></View>
+        <View style='text-align:center;height: 2rem;'><Text> {'案例'} </Text></View>
         <Case></Case>
       </View>
     )

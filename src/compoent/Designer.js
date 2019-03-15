@@ -24,11 +24,11 @@ export default class Designer extends Component {
       <View className='list'>
         {list.map(item=>(
           <View key={item.designer} className='t-article__section at-row'>
-            <View className='at-col at-col-3'><AtAvatar image={item.image} circle size='large'></AtAvatar></View>
-            <View className='at-col at-col-9'>
-              <View className='at-article__p'> {item.designer} </View>
-              <View className='at-article__p'> {item.case} </View>
-              <View className='at-article__p'> {item.idea} </View>
+            <View className='at-col at-col-3' style='padding:1rem;margin-bottom:0.5rem;'><AtAvatar image={item.image} circle size='large' style='align-items: center;'></AtAvatar></View>
+            <View className='at-col at-col-9' style='padding-top:0.3rem;'>
+              <View className='designer-text'> {item.designer} </View>
+              <View className='designer-text'> {item.case} </View>
+              <View className='designer-text' style='overflow: hidden;text-overflow:ellipsis;white-space: nowrap;width:14rem'> {item.idea} </View>
             </View>
           </View>))
         }

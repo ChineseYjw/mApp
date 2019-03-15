@@ -57,15 +57,15 @@ export default class Index extends Component {
             </Swiper>
             <AtGrid columnNum={4} hasBorder={false}  data={data} onClick={this.skipTo} />
             <AtDivider height='12' />
-            <AtNoticebar icon='volume-plus'>
+            <AtNoticebar icon='volume-plus' customStyle='color:#000;background:#fff;'>
               盐城圣豪州装修小程序上线啦！
             </AtNoticebar>
-            <AtNoticebar icon='arrow-right' single showMore moreText='MORE' onGotoMore={this.skipToCase}>
+            <AtNoticebar icon='arrow-right' single showMore moreText='MORE' onGotoMore={this.skipToCase} customStyle='color:#000;background:#fff;'>
               公司案例
             </AtNoticebar>
             <AtDivider height='12' />
             <Case></Case>
-            <AtNoticebar icon='arrow-right' single showMore moreText='MORE' onGotoMore={this.skipToDesigner} >
+            <AtNoticebar icon='arrow-right' single showMore moreText='MORE' onGotoMore={this.skipToDesigner} customStyle='color:#000;background:#fff;' >
               设计师
             </AtNoticebar>
             <AtDivider height='12' />
