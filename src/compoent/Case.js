@@ -21,7 +21,7 @@ export default class Case extends Component {
     return (
       <View className='at-row at-row--wrap'>
         {list.map(item=>(
-          <View key={item.text} className='at-col at-col-5 at-col__offset-0.5' >
+          <View key={item.text} className='at-col at-col-4 at-col__offset-1' >
             <Image src={item.image} />
             <View><Text> {item.text} </Text></View>
           </View>))

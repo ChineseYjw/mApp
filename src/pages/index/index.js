@@ -3,6 +3,7 @@ import { AtTabBar,AtGrid,AtNoticebar,AtDivider } from 'taro-ui'
 import { View,ScrollView,SwiperItem,Swiper,Image } from '@tarojs/components'
 import Case from '../../compoent/Case'
 import Designer from '../../compoent/Designer'
+import Contact from '../../compoent/Contact'
 import img0 from '../../assets/img/image0.jpg'
 import img1 from '../../assets/img/image1.jpg'
 import img2 from '../../assets/img/image2.jpg'
@@ -69,10 +70,13 @@ export default class Index extends Component {
             </AtNoticebar>
             <AtDivider height='12' />
             <Designer></Designer>
+            <AtDivider height='120' />
           </View>
           <View hidden={this.state.current===1 ? false : true}> {'xxsxsxsxsx'} </View>
-          <View hidden={this.state.current===2 ? false : true}> {'dwdddddddddddddd'} </View>
-          <AtDivider height='120' />
+          <View hidden={this.state.current===2 ? false : true}>
+            {'dwdddddddddddddd'}
+            <Contact></Contact>
+          </View>
         </ScrollView>
         <AtTabBar
           fixed
